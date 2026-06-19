@@ -4,6 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
@@ -69,6 +70,7 @@ web_modules/
 .env
 .env.*
 !.env.example
+*.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -81,7 +83,11 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+dist-ssr
 .output
+.vinxi
+.tanstack/**
+.nitro
 
 # Gatsby files
 .cache/
@@ -128,6 +134,10 @@ dist
 # pnpm
 .pnpm-store
 
+# wrangler / Cloudflare
+.wrangler/
+.dev.vars
+
 # yarn v3
 .pnp.*
 .yarn/*
@@ -141,3 +151,14 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
